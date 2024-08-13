@@ -1,24 +1,54 @@
-# Program 4
+import java.util.Scanner; 
 
-## Program Description:  
-- Assign 4 three-digit number to four different variables.
-- Then have the computer sum them and store the sum in a fifth variable.
-- Compute the average and store the answer in a sixth variable.
-- Print out the results.
-- Use the numbers 475, 821, 369, and 562 for your test data.
-- Notice the extra space between the word “IS” and the number “2227” and the blank line between the two lines of output.
+public class Program4 {
+    public static void main(String[]args){
+        //Declare Variable 
+        int value1 = 0; 
+        int value2 = 0; 
+        int value3 = 0; 
+        int value4 = 0;
+        
+        //Create my scanner
+        Scanner theScanner = new Scanner(System.in); 
+        
+        //Ask for user input
+        System.out.println("Enter the first value: "); 
+        value1 = theScanner.nextInt(); 
+        
+        System.out.println("Enter the second value: "); 
+        value2 = theScanner.nextInt(); 
+        
+        System.out.println("Enter the third value: "); 
+        value3 = theScanner.nextInt(); 
+        
+        System.out.println("Enter the fourth value: ");
+        value4 = theScanner.nextInt(); 
+        
+        //Calculate
+        int sum = value1 + value2 + value3 + value4;
+        double average = sum / 4.0;
+        
+        //Print results 
+        System.out.println("The sum of the four numbers is " + sum); 
+        System.out.println("The average of the four numbers is " + average);
+        
+        
+        
+    }
+}
 
-### Requirements: 
-- Read user input data
-- Store input data in 4 separate variables
-- Store sum in a separate variable
-- Store average in a separate variable
-- Output average with decimal places
-  - Can be more than 2
 
+//Paste console output below:
+/*
+Enter the first value: 
+475
+Enter the second value: 
+821
+Enter the third value: 
+369
+Enter the fourth value: 
+562
+The sum of the four numbers is 2227
+The average of the four numbers is 556.75
 
-### Sample Output:
->The sum of the four numbers is 2227
->
->The average of the four numbers is 556.75
-
+*/
